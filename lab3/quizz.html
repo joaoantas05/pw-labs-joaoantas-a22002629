@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Iorque</title>
+    <meta name="author" content="João Antas">
+    <meta name="keywords" content="Website, Nova Iorque">
+    <meta name="description" content="Website sobre Nova Iorque">
+    <link rel="icon" href="images/newyork.png">
+    <body style="background-color:rgb(178, 236, 247)"></body>
+</head>
+<body>
+    <header><h1>Nova Iorque</h1>
+        <figure><img src="images/new_york_city.jpg"></figure>
+        <br></header>
+        
+        <nav>
+        <a href="index.html">Introdução |</a>
+        <a href="local.html"> Localização |</a>
+        <a href="multimedia.html"> Multimédia |</a>
+        <a href="info.html"> Informações |</a>
+        <a href="quizz.html"> <b>Quizz</b> |</a>
+        <a href="../index.html"> Home</a>
+        </nav>
+        
+    <h3>Quizz</h3>
+    <p>🤓Agora vais ver se sabes tudo sobre a cidade de Nova Iorque!🤔</p>
+    <form>
+
+        <fieldset title="info">
+            <Legend>Identificação</Legend>
+            <p><b>Nome:</b><input type="text" placeholder="Escreva aqui" name="nome"></p>
+            <p><b>Apelido:</b><input type="text" placeholder="Escreva aqui" name="apelido"></p>
+            <p><b>Email:</b><input type="email" placeholder="Escreva aqui" name="email"></p>
+            <p><b>Telemovél: <input type="tel" name="tel" placeholder="911-222-333" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" size="26"></b></p>
+        </p>
+        </fieldset>
+        <br>
+        <fieldset title="perguntas">
+            <Legend>Quizz sobre Nova Iorque</Legend>
+            <br>
+            <b>Qual a cidade mais populosa dos Estados Unidos ?</b>
+            <br><br>
+            <input type="text" name="f1"  placeholder="Escreva aqui" size="20">
+            <br><br>
+            <hr>
+            <b>Qual a área total da cidade de Nova Iorque?</b>
+            <br>
+            <input type="radio" name="area" value="certo">
+            <label for="q2">1 212,60 km2</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for="q2">1 502, 60 km2</label><br>
+            <input type="radio" name="area" value="errado">
+            <label for for="q2">1 112,60 km2</label>
+            <br><br>
+            <hr>
+            <b>Qual o número aproximado de habitantes de Nova Iorque ?</b> 
+            <br>
+            <input type="checkbox" name="populacao" value="errado">
+            <label for="q3"> 7 456 315 hab</label><br>
+            <input type="checkbox" name="populacao" value="certo">
+            <label for="q3"> 8 336 817 hab</label><br>
+            <input type="checkbox" name="populacao" value="errado">
+            <label for="q3"> 5 996 216 hab</label>
+            <br><br>
+            <hr>
+            <label for="worldtrade"><b>Em que dia aconteceu o atentado terrorista ao World Trade Center em Nova Iorque?</b></label>
+            <br><br>
+            <input type="date"  name="terror" value="terror">
+            <br><br>
+            <hr>
+            <label for="colorny"><b>No seu ponto de vista que cor caracteriza Nova Iorque ?</b></label>
+            <br><br>
+            <input type="color" id="colorny" name="colorny" value="#0B7CA2">
+            <br><br>
+            <hr>
+            <label for="president"><b>Em que ano Joe Biden foi eleito presidente dos USA ?</b></label>
+            <br><br>
+            <input type="number" name="year" placeholder="Escreva aqui">
+            <br><br>
+            <hr>
+            <label for="quizzScore"><b>De 0 a 10 quanto gostaria de fazer uma viagem até aos Estados Unidos da América ?</b></label>
+            <br><br>
+            <input type="range" id="score" name="score" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
+            <output>0</output>       
+        </fieldset>
+    </form>
+</body>
+</html>
