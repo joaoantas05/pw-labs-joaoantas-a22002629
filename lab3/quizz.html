@@ -7,9 +7,9 @@
     <meta name="keywords" content="Website, Nova Iorque">
     <meta name="description" content="Website sobre Nova Iorque">
     <link rel="icon" href="images/newyork.png">
-    <body style="background-color:rgb(178, 236, 247)"></body>
 </head>
-<body>
+
+<body style="background-color:rgb(178, 236, 247)">
     <header><h1>Nova Iorque</h1>
         <figure><img src="images/new_york_city.jpg"></figure>
         <br></header>
@@ -25,14 +25,13 @@
         
     <h3>Quizz</h3>
     <p>🤓Agora vais ver se sabes tudo sobre a cidade de Nova Iorque!🤔</p>
-    <form>
-
+    <form method="POST" action="mailto: 22002629@alunos.ulht.pt" enctype="multipart/form-data" autocomplete="on">
         <fieldset title="info">
             <Legend>Identificação</Legend>
-            <p><b>Nome:</b><input type="text" placeholder="Escreva aqui" name="nome"></p>
-            <p><b>Apelido:</b><input type="text" placeholder="Escreva aqui" name="apelido"></p>
-            <p><b>Email:</b><input type="email" placeholder="Escreva aqui" name="email"></p>
-            <p><b>Telemovél: <input type="tel" name="tel" placeholder="911-222-333" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" size="26"></b></p>
+            <p><b>Nome:</b><input type="text" name="nome" required placeholder="Escreva aqui"  autofocus maxlength="25" size="25"></p>
+            <p><b>Apelido:</b><input type="text" name="apelido" required placeholder="Escreva aqui"></p>
+            <p><b>Email:</b><input type="email" name="email" required placeholder="Escreva aqui"></p>
+            <p><b>Telemovél: <input type="phone" name="phone" required placeholder="911-222-333" pattern="[0-9]{2}-[0-9]{4}-[0-9]{3}" size="20"></b></p>
         </p>
         </fieldset>
         <br>
@@ -69,7 +68,7 @@
             <input type="date"  name="terror" value="terror">
             <br><br>
             <hr>
-            <label for="colorny"><b>No seu ponto de vista que cor caracteriza Nova Iorque ?</b></label>
+            <label for="colorny"><b>No seu ponto de vista que cor escolheria para caracterizar Nova Iorque ?</b></label>
             <br><br>
             <input type="color" id="colorny" name="colorny" value="#0B7CA2">
             <br><br>
@@ -79,11 +78,40 @@
             <input type="number" name="year" placeholder="Escreva aqui">
             <br><br>
             <hr>
+            <label for="metro"><b>Quantas estações tem o metro de Nova Iorque ?</b></label>
+            <br><br>
+            <select name="cars" id="cars">
+                <option value="certo">468</option>
+                <option value="errado">23</option>
+                <option value="errado">204</option>
+                <option value="errado">567</option>
+            </select>
+            <br><br>
+            <hr>
+            <label for="apple"><b>Qual o apelido dado a cidade de Nova Iorque ?</b></label>
+            <br><br>
+            <input list="apple" name="city" id="city">
+            <datalist id="apple">
+                <option value="Big Apple">
+                <option value="Big City">
+                <option value="Big Pear">
+                <option value="Big Tower">
+            </datalist>
+            <br><br>
+            <hr>
             <label for="quizzScore"><b>De 0 a 10 quanto gostaria de fazer uma viagem até aos Estados Unidos da América ?</b></label>
             <br><br>
             <input type="range" id="score" name="score" min="0" max="10" oninput="this.nextElementSibling.value = this.value">
-            <output>0</output>       
+            <output>0</output>
+            <hr>
+            <label for="opinion"><b>Qual o sua opinião sobre este quizz ?</b></label>
+            <br><br>
+            <textarea name="opiniao" id="opiniao" cols="50" rows="10"></textarea>
+            <br>
+            <hr>
+            <center><input type="image" src="images/submit.png" alt="Submit" width="48" height="48"></center>
         </fieldset>
-    </form>
+    </form><br>
+    <footer>João Antas, a22002629, Universidade Lusófona de Humanidades e Tecnologias, 2º Ano, Engenharia Informatica</footer>
 </body>
 </html>
