@@ -3,13 +3,13 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-a:link {color: blueviolet;
+a:link {color: rgb(194, 183, 30);
 }
-a:visited {color: orange;
+a:visited {color: rgb(102, 89, 14);
 }
 a:hover {
     cursor: pointer;
-    color: rgb(71, 27, 31);}
+    color: rgb(155, 32, 43);}
 a:active {color: blue;
 }
 
