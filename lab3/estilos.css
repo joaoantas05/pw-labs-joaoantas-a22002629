@@ -8,7 +8,7 @@ body > p::first-letter{
     font-size: 20px;
 }
 
-a:link {color: rgb(194, 183, 30);
+a:link {color: rgb(30, 107, 194);
 }
 
 a:visited {color: rgb(102, 89, 14);
@@ -20,13 +20,13 @@ a:hover {
 a:active {color: blue;
 }
 
-.tabela table tr:nth-child(2n),#poema{
+.tabela table tr:nth-child(2n),#poema{ /*tabela das informações*/
     background-color: rgb(45, 127, 182);
     color: black; 
 }
 
 .tabela table tr:nth-child(2n-1){
-    background-color: rgb(194, 183, 30);
+    background-color: rgb(194, 183, 30); /*tabela das informações*/
     color: black; 
 }
 
@@ -36,7 +36,7 @@ a:active {color: blue;
 }
 
 .fotofrase::first-line{
-    color: rgb(192, 130, 14);
+    color: rgb(90, 81, 45);
 }
 
 .quizz::first-line{
@@ -60,6 +60,7 @@ p, h2{
 table tr:nth-child(2n-1){
     background-color: rgb(26, 149, 187);
 }
+
 table tr:nth-child(2n){
     background-color: rgb(199, 193, 193);
 }

@@ -14,7 +14,7 @@ ul{
     display: grid; /*colunas*/
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 5vw); /*altura*/
-    grid-gap: 50px; /*espaçamento emtre cada coluna*/
+    grid-gap: 50px; /*espaçamento entre cada coluna*/
     margin-right: 40px;
 }
 
