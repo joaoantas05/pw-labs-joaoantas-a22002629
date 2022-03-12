@@ -68,3 +68,21 @@ table tr:nth-child(2n){
 td{
     text-align: center;
 }
+
+body h1{
+    text-align: center;
+}
+
+header figure {
+    margin: auto;
+    width: 29%;
+}
+
+nav{
+    text-align: center;
+}
+
+
+
+
+
