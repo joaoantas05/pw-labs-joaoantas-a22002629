@@ -21,12 +21,12 @@ a:active {color: blue;
 }
 
 .tabela table tr:nth-child(2n),#poema{ /*tabela das informações*/
-    background-color: rgb(45, 127, 182);
+    background-color: rgb(184, 154, 154);
     color: black; 
 }
 
-.tabela table tr:nth-child(2n-1){
-    background-color: rgb(194, 183, 30); /*tabela das informações*/
+.tabela table tr:nth-child(2n-1){ /*tabela das informações*/
+    background-color: rgb(22, 122, 189);
     color: black; 
 }
 
@@ -57,11 +57,11 @@ p, h2{
     color: black;
 }
 
-table tr:nth-child(2n-1){
+table tr:nth-child(2n-1){ /*tabela do HTML e CSS*/
     background-color: rgb(26, 149, 187);
 }
 
-table tr:nth-child(2n){
+table tr:nth-child(2n){ /*tabela do HTML e CSS*/
     background-color: rgb(199, 193, 193);
 }
 
