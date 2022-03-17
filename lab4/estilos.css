@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+a{ /*tira a linha dos href*/
+    text-decoration: none;
+}
+
+.menu{ /*barra*/
+    padding-top: 15px;
+    font-size: 20px;
+    background-color: rgb(2, 154, 255);  
+    margin-bottom: 5px;  
+    height: 50px;
+}
+
+.menu nav a { /*letras*/
+    margin-right: 20px; 
+    color: rgb(255, 255, 255); 
+}
+
+.menu nav .labs{
+    position: absolute;
+    right: 10px;
+    color: blue;
+}
+
+.capitais{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+}
+
+.capitais > div{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color:rgb(174, 185, 199);
+    align-items: center;
+    padding: 70px 0;
+    background-image: url("../lab4/images/fundo_cidade.jpg") ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.dicas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+    }
+
+.dicas > div{
+    padding: 10px 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.destinos .porto{
+    background-image: url("images/porto.jpg");
+    grid-area: porto;
+}
+
+.destinos .lisboa{
+    grid-area: lisboa;
+    color: black;
+}
+
+.destinos .coimbra{
+    background-image: url("images/porto.jpg");
+    grid-area: coimbra;
+}
+
+.destinos .lagos{
+    background-image: url("images/porto.jpg");
+    grid-area: lagos;
+}
+
+.destinos .madeira{
+    background-image: url("images/porto.jpg");
+    grid-area: madeira;
+}
+
+.destinos .sao-miguel{
+    background-image: url("images/porto.jpg");
+    grid-area: sao-miguel;
+}
+
+.destinos{
+    display: grid;
+    color: white;
+    grid-template-areas: 'porto coimbra lagos lisboa'
+    'madeira madeira sao-miguel lisboa';
+    gap: 15px; /* separação das imagens*/
+}
+
+#texto{
+    text-align: center;
+}
+
+.destinos div{
+    position: relative;
+}
+
+.destinos > .activities{
+    position: absolute;
+}
+
+.city{
+    position: absolute;
+    bottom: 0px;
+}
+
+.sentence{
+    position: absolute;
+    bottom: 50px;
+}
+
+
