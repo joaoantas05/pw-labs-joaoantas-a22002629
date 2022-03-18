@@ -129,10 +129,31 @@ a{ /*tira a linha dos href*/
 
 .destinos{
     display: grid;
-    color: white;
-    grid-template-areas: 'porto coimbra lagos balao'
-    'madeira madeira sao-miguel balao';
-    gap: 15px; /* separação das imagens*/
+    color: rgb(255, 255, 255);
+}
+
+@media(min-width : 901px){ /* Phone */
+    .destinos{
+        gap: 15px;
+        grid-template-areas: 
+        'porto coimbra lagos balao'
+        'madeira madeira sao-miguel balao';
+    }
+}
+
+@media(max-width : 900px){ /* Computer */
+    .destinos{
+        gap: 15px;
+        grid-template-areas:
+        'porto coimbra'
+        'lagos sao-miguel'
+        'madeira madeira'
+        'balao balao'
+    }
+    .destinos > div{
+        min-height: 500px;
+    }
+
 }
 
 #texto{
@@ -141,6 +162,7 @@ a{ /*tira a linha dos href*/
 
 .destinos div{
     position: relative;
+    padding-left: 15px;
 }
 
 .destinos > .activities{
@@ -149,12 +171,10 @@ a{ /*tira a linha dos href*/
 
 .city{
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
 }
 
 .sentence{
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
 }
-
-
