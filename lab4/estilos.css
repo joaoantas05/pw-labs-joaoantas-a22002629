@@ -93,39 +93,45 @@ a{ /*tira a linha dos href*/
 
 .destinos .porto{
     background-image: url("images/porto.jpg");
+    background-size: cover;
     grid-area: porto;
 }
 
-.destinos .lisboa{
-    grid-area: lisboa;
+.destinos .balao{
+    grid-area: balao;
     color: black;
 }
 
 .destinos .coimbra{
     background-image: url("images/coimbra.jpg");
+    background-size: cover;
     grid-area: coimbra;
 }
 
 .destinos .lagos{
     background-image: url("images/lagos.jpeg");
+    background-size: cover;
     grid-area: lagos;
 }
 
 .destinos .madeira{
     background-image: url("images/madeira.jpeg");
+    background-position: center;
+    background-size: cover;
     grid-area: madeira;
 }
 
 .destinos .sao-miguel{
     background-image: url("images/sao_miguel.jpg");
+    background-size: cover;
     grid-area: sao-miguel;
 }
 
 .destinos{
     display: grid;
     color: white;
-    grid-template-areas: 'porto coimbra lagos lisboa'
-    'madeira madeira sao-miguel lisboa';
+    grid-template-areas: 'porto coimbra lagos balao'
+    'madeira madeira sao-miguel balao';
     gap: 15px; /* separação das imagens*/
 }
 

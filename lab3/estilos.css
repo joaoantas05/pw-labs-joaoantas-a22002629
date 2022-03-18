@@ -16,8 +16,15 @@ a:visited {color: rgb(102, 89, 14);
 
 a:hover {
     cursor: progress;
-    color: rgb(155, 32, 43);}
-a:active {color: blue;
+    color: rgb(155, 32, 43);
+}
+
+p, ul{
+    background-color: rgb(255, 255, 255);
+}
+
+a:active {
+    color: blue;
 }
 
 .tabela table tr:nth-child(2n),#poema{ /*tabela das informações*/
