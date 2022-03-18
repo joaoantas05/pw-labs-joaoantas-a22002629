@@ -9,7 +9,7 @@ a{ /*tira a linha dos href*/
 }
 
 .menu{ /*barra*/
-    padding-top: 15px;
+    padding: 15px;
     font-size: 20px;
     background-color: rgb(2, 154, 255);  
     margin-bottom: 5px;  
@@ -21,7 +21,7 @@ a{ /*tira a linha dos href*/
     color: rgb(255, 255, 255); 
 }
 
-.menu nav .labs{
+.menu nav .labs{ /*letras labs de programação web*/
     position: absolute;
     right: 10px;
     color: blue;
@@ -102,22 +102,22 @@ a{ /*tira a linha dos href*/
 }
 
 .destinos .coimbra{
-    background-image: url("images/porto.jpg");
+    background-image: url("images/coimbra.jpg");
     grid-area: coimbra;
 }
 
 .destinos .lagos{
-    background-image: url("images/porto.jpg");
+    background-image: url("images/lagos.jpeg");
     grid-area: lagos;
 }
 
 .destinos .madeira{
-    background-image: url("images/porto.jpg");
+    background-image: url("images/madeira.jpeg");
     grid-area: madeira;
 }
 
 .destinos .sao-miguel{
-    background-image: url("images/porto.jpg");
+    background-image: url("images/sao_miguel.jpg");
     grid-area: sao-miguel;
 }
 
