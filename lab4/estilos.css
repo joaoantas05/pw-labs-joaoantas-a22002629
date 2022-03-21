@@ -153,6 +153,9 @@ a{ /*tira a linha dos href*/
     .destinos > div{
         min-height: 500px;
     }
+    .menu {
+        height: 100px;
+    }
 }
 
 #texto{
