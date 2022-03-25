@@ -64,7 +64,7 @@ a{ /*tira a linha dos href*/
     display: flex;
     justify-content: center;
     font-size: 35px;
-    color:rgb(255, 136, 0);
+    color:rgb(255, 255, 255);
     align-items: center;
     padding: 70px 0;
     background-image: url("../lab4/images/fundo_cidade.jpg") ;
