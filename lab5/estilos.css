@@ -124,35 +124,11 @@ body{
 .photo12{
     grid-area: photo12;
 }
-
-@media(min-width : 600px){
+/*
+@media(max-width : 600px){
     .fotos{
         gap: 15px;
         grid-template-areas: 
-        'photo1 photo2 photo3'
-        'photo4 photo5 photo6'
-        'photo7 photo8 photo9'
-        'photo10 photo11 photo12';
-    }
-}
-
-@media(max-width : 900px){
-    .fotos{
-        gap: 15px;
-        grid-template-areas:
-        'photo1 photo2'
-        'photo3 photo4'
-        'photo5 photo6'
-        'photo7 phot8'
-        'photo9 photo10'
-        'photo11 photo12';
-    }
-}
-
-@media(max-width : 901px){
-    .fotos{
-        gap: 15px;
-        grid-template-areas:
         'photo1'
         'photo2'
         'photo3'
@@ -164,9 +140,36 @@ body{
         'photo9'
         'photo10'
         'photo11'
-        'photo12';        
+        'photo12'; 
     }
 }
+
+@media(max-width : 900px){
+    .fotos{
+        gap: 15px;
+        grid-template-areas:
+        
+        'photo1 photo2'
+        'photo3 photo4'
+        'photo5 photo6'
+        'photo7 phot8'
+        'photo9 photo10'
+        'photo11 photo12';
+    }
+}
+*/
+    .fotos{
+        gap: 15px;
+        grid-template-areas:
+        'photo1 photo2 photo3'
+        'photo4 photo5 photo6'
+        'photo7 photo8 photo9'
+        'photo10 photo11 photo12';   
+    }
+    .fotos > div{
+        max-height: 300px;
+        max-width: 300px;
+    }
 
 .capitais{
     display: flex;
