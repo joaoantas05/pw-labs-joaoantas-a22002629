@@ -26,6 +26,10 @@ body{
     margin: 0;
 }
 
+.menu nav a:hover { /*letras*/
+    font-weight: bold;
+}
+
 .menu nav a { /*letras*/
     margin-right: 20px; 
     color: rgb(0, 0, 0); 
