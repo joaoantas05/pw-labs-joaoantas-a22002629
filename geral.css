@@ -2,6 +2,37 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+header a{ /*button*/
+    border: 1px solid white;
+    padding: 15px;
+    color: black;
+    background: white;
+    border: 1px solid black; /* moldura */
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    align-items: center;
+}
+
+.imagem_parallax{
+    background-image: url("images/foto_principal.jpeg");
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 70px;
+    color: white;
+    font-size: 20px;
+}
+
 h1{
     text-align: center;
     margin-top: 100px;
@@ -24,7 +55,7 @@ ul li {
     box-shadow: 5px 5px 15px #888888;
 }
 
-li{
+li{ /* laboratorios */
     background-color: white;
     border: 1px solid black; /* moldura */
     text-align: center;
@@ -33,14 +64,17 @@ li{
     font-size: 18px;
 }
 
-li:hover{
+li:hover{ /*rato*/
     background-color: rgb(31, 133, 201);
     color: white;
 }
 
-li:hover a{
+li:hover a{ 
     color: white;
+}
 
+li a{
+    color: black;
 }
 
 a{
@@ -54,6 +88,7 @@ p{
 }
 
 aside{
+    margin-top: 15px;
     grid-area: aside;
 }
 
@@ -64,8 +99,9 @@ nav{
 @media(min-width:601px){
     .geral{
         display: grid;
+        margin: 50px 0;
         grid-template-areas:
-        'nav aside'
+        'nav aside';
     }
 }
 
@@ -74,7 +110,7 @@ nav{
         display: grid;
         grid-template-areas:
         'nav'
-        'aside'
+        'aside';
     }
     
     ul {
@@ -88,4 +124,22 @@ nav{
     aside img{
         margin: auto;
     }
+}
+
+@keyframes example {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+aside img{
+    opacity: 0;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+main p a{
+    color: black;
+    display: inline;
 }

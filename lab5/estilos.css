@@ -17,7 +17,7 @@ a{ /*tira a linha dos href*/
     background-color: rgb(255, 255, 255);  
     margin-bottom: 5px;  
     height: 70px;
-    position: sticky§;
+    position: sticky;
     width: 100%;
     font-weight: 400;
 }
@@ -71,105 +71,53 @@ body{
     background-position: bottom;
     background-attachment: fixed;
     height: 90vh;
+    margin-bottom: 50px;
 }
 
-.fotos{
-    display: grid; /*organiza*/
+.fotos {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    grid-auto-rows: minmax(150px, 1fr);
+    grid-auto-flow: dense;
+    background-color: rgb(238, 248, 248);
+    padding-bottom: 10%;
+    padding: 50px 10vw
 }
 
-.photo1{
-    grid-area: photo1;
+.fotos div{
+    position: relative;
 }
 
-.photo2{
-    grid-area: photo2;
+.fotos div p { 
+    background-color: rgb(204, 202, 202);
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    margin-left: 10px;
 }
 
-.photo3{
-    grid-area: photo3;
+.fotos div:hover p { 
+    visibility: visible;
 }
 
-.photo4{
-    grid-area: photo4;
-}
-
-.photo5{
-    grid-area: photo5;
-}
-
-.photo6{
-    grid-area: photo6;
-}
-
-.photo7{
-    grid-area: photo7;
-}
-
-.photo8{
-    grid-area: photo8;
-}
-
-.photo9{
-    grid-area: photo9;
-}
-
-.photo10{
-    grid-area: photo10;
-}
-
-.photo11{
-    grid-area: photo11;
-}
-
-.photo12{
-    grid-area: photo12;
-}
-/*
-@media(max-width : 600px){
+  .fotos > div img{
+      width: 100%;
+      height: 100%;
+  }
+  @media(max-width : 600px){ 
     .fotos{
-        gap: 15px;
-        grid-template-areas: 
-        'photo1'
-        'photo2'
-        'photo3'
-        'photo4'
-        'photo5'
-        'photo6'
-        'photo7'
-        'photo8'
-        'photo9'
-        'photo10'
-        'photo11'
-        'photo12'; 
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     }
 }
-
-@media(max-width : 900px){
+@media(max-width : 900px){ 
     .fotos{
-        gap: 15px;
-        grid-template-areas:
-        
-        'photo1 photo2'
-        'photo3 photo4'
-        'photo5 photo6'
-        'photo7 phot8'
-        'photo9 photo10'
-        'photo11 photo12';
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
 }
-*/
-    .fotos{
-        gap: 15px;
-        grid-template-areas:
-        'photo1 photo2 photo3'
-        'photo4 photo5 photo6'
-        'photo7 photo8 photo9'
-        'photo10 photo11 photo12';   
-    }
-    .fotos > div{
-        max-height: 300px;
-        max-width: 300px;
-    }
 
 .capitais{
     display: flex;
@@ -312,3 +260,71 @@ body{
     position: absolute;
     bottom: 0px;
 }
+
+@keyframes example {
+    0% {background-color: red;}
+    20% {background-color: yellow;transform: rotate(360deg);}
+    40% {background-color: green;transform: rotate(0deg);}
+    60% {background-color: purple;transform: rotate(360deg);}
+    80% {background-color:  blue;transform: rotate(0deg);}
+    100% {background-color: orange;transform: rotate(360deg);}
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.circulo {
+    border: 5px solid #DCDCDC;
+    border-left-color: #00CC99;
+	border-radius: 100%;
+	height: 50px;
+	width: 50px;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.circulo.e-animacao {
+	animation: loading 2s cubic-bezier(0, .25, .7125, .1) infinite;
+}
+
+.animacoes{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-auto-flow: dense;
+    background-color: rgb(206, 228, 228);
+    padding: 50px 10vw
+}
+
+.animacoes > div img{
+    display: flex;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.animacao1 img:hover {
+    opacity: 0.8;
+    background: black;
+    transform: rotate(-5deg);
+}
+
+.animacao2 img:hover {
+    opacity: 0.8;
+    background: black;
+    transform: rotate(5deg);
+  }
+
+  
