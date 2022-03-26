@@ -232,6 +232,12 @@ body{
         'porto coimbra lagos balao'
         'madeira madeira sao-miguel balao';
     }
+    .animacoes{
+        grid-template-columns: auto;
+    }
+    .animacoes > div img{
+        max-width: 90%;
+    }
 }
 
 @media(max-width : 900px){ /* Computer */
