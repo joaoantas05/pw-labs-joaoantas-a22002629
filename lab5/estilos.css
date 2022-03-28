@@ -41,7 +41,7 @@ body{
     color: rgb(0, 0, 0);
 }
 
-.inicio {
+.inicio{
     letter-spacing: 5px;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ body{
     margin-bottom: 50px;
 }
 
-.fotos {
+.fotos{
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -93,7 +93,7 @@ body{
     position: relative;
 }
 
-.fotos div p { 
+.fotos div p{ 
     background-color: rgb(204, 202, 202);
     border: 1px solid black;
     padding: 5px 10px;
@@ -104,15 +104,15 @@ body{
     margin-left: 10px;
 }
 
-.fotos div:hover p { 
+.fotos div:hover p{ 
     visibility: visible;
 }
 
-  .fotos > div img{
+.fotos > div img{
       width: 100%;
       height: 100%;
-  }
-  @media(max-width : 600px){ 
+}
+@media(max-width : 600px){ 
     .fotos{
         grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     }
@@ -133,7 +133,8 @@ body{
 }
 
 #capitais, #travels, #dream{
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+    text-align: center;
 }
 
 .capitais > div{
@@ -279,7 +280,7 @@ body{
     bottom: 0px;
 }
 
-@keyframes example { /*quadrado animação*/
+@keyframes example{ /*quadrado animação*/
     0% {background-color: red;}
     20% {background-color: yellow;transform: rotate(360deg);}
     40% {background-color: green;transform: rotate(0deg);}
@@ -288,7 +289,7 @@ body{
     100% {background-color: orange;transform: rotate(360deg);}
 }
 
-.quadrado {
+.quadrado{
     width: 100px;
     height: 100px;
     background-color: red;
@@ -305,7 +306,7 @@ body{
 	width: 50px;
 }
 
-@keyframes loading {
+@keyframes loading{
 	0% {
 		transform: rotate(0);
 	}
@@ -314,7 +315,7 @@ body{
 	}
 }
 
-.circulo.e-animacao {
+.circulo.e-animacao{
 	animation: loading 2s cubic-bezier(0, .25, .7125, .1) infinite;
 }
 
@@ -333,13 +334,13 @@ body{
     padding: 20px;
 }
 
-.animacao1 img:hover {
+.animacao1 img:hover{
     opacity: 0.8;
     background: black;
     transform: rotate(-5deg);
 }
 
-.animacao2 img:hover {
+.animacao2 img:hover{
     opacity: 0.8;
     background: black;
     transform: rotate(5deg);

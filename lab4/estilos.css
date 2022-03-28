@@ -16,7 +16,7 @@ a{ /*tira a linha dos href*/
     height: 50px;
 }
 
-.menu nav a { /*letras*/
+.menu nav a{ /*letras*/
     margin-right: 20px; 
     color: rgb(255, 255, 255); 
 }
@@ -60,7 +60,7 @@ a{ /*tira a linha dos href*/
     align-items: center;
 }
 
-.inicio {
+.inicio{
     letter-spacing: 5px;
     display: flex;
     justify-content: center;

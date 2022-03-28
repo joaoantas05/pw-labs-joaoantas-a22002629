@@ -19,6 +19,7 @@ header{
     justify-content: space-between;
     padding: 0 70px;
     align-items: center;
+    /*position: sticky;*/
 }
 .ulht{
     display: flex;
@@ -51,10 +52,10 @@ h1{
 
 ul{
     list-style: none;
-    display: grid; /*colunas*/
+    display: grid; /* colunas */
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 5vw); /*altura*/
-    grid-gap: 50px; /*espaçamento entre colunas*/
+    grid-template-rows: repeat(3, 5vw); /* altura */
+    grid-gap: 50px; /* espaçamento entre colunas */
     margin-right: 40px;
 }
 
@@ -99,6 +100,13 @@ aside{
     grid-area: aside;
 }
 
+aside img{
+    opacity: 0;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
 nav{
     grid-area: nav;
 }
@@ -120,6 +128,7 @@ nav{
         max-height: 40vh;
         margin-top: 20px;
     }
+
     .geral{
         display: grid;
         grid-template-areas:
@@ -146,15 +155,7 @@ nav{
     100% {opacity: 0;}
 }
 
-aside img{
-    opacity: 0;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
 main p a{
     color: black;
     display: inline;
 }
-

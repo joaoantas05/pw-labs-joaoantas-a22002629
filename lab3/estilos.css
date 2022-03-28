@@ -8,13 +8,15 @@ body > p::first-letter{
     font-size: 20px;
 }
 
-a:link {color: rgb(30, 107, 194);
+a:link{
+    color: rgb(30, 107, 194);
 }
 
-a:visited {color: rgb(102, 89, 14);
+a:visited{
+    color: rgb(102, 89, 14);
 }
 
-a:hover {
+a:hover{
     cursor: progress;
     color: rgb(155, 32, 43);
 }
@@ -23,7 +25,7 @@ p, ul{
     background-color: rgb(255, 255, 255);
 }
 
-a:active {
+a:active{
     color: blue;
 }
 
@@ -88,8 +90,3 @@ header figure {
 nav{
     text-align: center;
 }
-
-
-
-
-
