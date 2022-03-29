@@ -19,7 +19,10 @@ header{
     justify-content: space-between;
     padding: 0 70px;
     align-items: center;
-    /*position: sticky;*/
+    position: sticky; /* fixar a barra do menu */
+    top: 0; /* fixar a barra do menu */
+    background-color:rgb(178, 236, 247); /* fixar a barra do menu */
+    z-index: 2; /*foto windows phone*/
 }
 .ulht{
     display: flex;
@@ -28,7 +31,6 @@ header{
 
 .imagem_parallax{
     background-image: url("images/foto_principal.jpeg");
-    width: 100%;
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;

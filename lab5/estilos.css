@@ -22,10 +22,6 @@ a{ /*tira a linha dos href*/
     font-weight: 400;
 }
 
-body{
-    margin: 0;
-}
-
 .menu nav a:hover { /*letras*/
     font-weight: bold;
 }
@@ -225,7 +221,7 @@ body{
     color: rgb(255, 255, 255);
 }
 
-@media(min-width : 901px){ /* Phone */
+@media(min-width : 901px){ /* Computer */
     .destinos{
         gap: 15px;
         grid-template-areas: 
@@ -240,7 +236,7 @@ body{
     }
 }
 
-@media(max-width : 900px){ /* Computer */
+@media(max-width : 900px){ /* Phone */
     .destinos{
         gap: 15px;
         grid-template-areas:
@@ -254,6 +250,17 @@ body{
     }
     .menu {
         height: 100px;
+    }
+    nav a{
+        display: block;
+        position: relative;
+        right: auto;
+        text-align: center;
+    }
+    .menu nav .labs {
+        position: relative;
+        right: auto;
+        text-align: center;
     }
 }
 
