@@ -4,14 +4,13 @@ body{
 
 header a{ /*button*/
     padding: 15px; 
-    color: black;
-    background: white;
+    color: white;
+    background: #0b406b;
     text-align: center;
-    border-left: 1px solid black ;
 }
 header a:hover{
-    background-color: rgb(31, 133, 201);
-    color: white;
+    background-color: white;
+    color: #0b406b;
 }
 
 header{
@@ -43,6 +42,10 @@ header{
     font-size: 20px;
 }
 
+.imagem_parallax h2{
+    font-size: 1.7em;
+}
+
 h1{
     text-align: center;
     margin-top: 100px;
@@ -57,7 +60,7 @@ ul{
     display: grid; /* colunas */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 5vw); /* altura */
-    grid-gap: 50px; /* espaçamento entre colunas */
+    grid-gap: 80px; /* espaçamento entre colunas */
     margin-right: 40px;
 }
 
@@ -70,7 +73,7 @@ li{ /* laboratorios */
     border: 1px solid black; /* moldura */
     text-align: center;
     padding: 35px 0;
-    height: 50%;
+    height: 80%;
     font-size: 18px;
 }
 
@@ -160,4 +163,8 @@ nav{
 main p a{
     color: black;
     display: inline;
+}
+
+main {
+    margin-top: 100px;
 }
